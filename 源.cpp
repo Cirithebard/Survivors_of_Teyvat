@@ -32,7 +32,7 @@ inline void putimage_alpha(int x, int y, IMAGE* img)
 		GetImageHDC(img), 0, 0, w, h, { AC_SRC_OVER,0,255,AC_SRC_ALPHA });
 }
 
-class Atlas
+class Atlas       								//这个atlus是图片资源的容器，Animation是决定实际渲染图集的控制器
 {
 public:
 	Atlas(LPCTSTR path, int num)
